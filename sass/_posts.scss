@@ -1,0 +1,59 @@
+article {
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+    
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        text-align: left;
+    }
+    
+    //Make sticky posts stand out
+    &.sticky {
+        background: $bgc_2;
+        box-shadow: $box_shadow;
+        padding: 10px 20px;
+    }
+    
+    //Fix images
+    img {
+        max-width: 100%;
+        padding: 5px 0;
+        box-sizing: border-box;
+    }
+    img, div {
+        &.alignleft {
+            float: left;
+            margin: 3px 15px 3px 0;
+        }
+        &.alignright {
+            float: right;
+            margin: 3px 0 3px 15px;
+        }
+        &.aligncenter {
+            float: none;
+            display: block;
+            margin: 10px auto;
+        }
+    }
+    .wp-caption {
+        max-width: 100%;
+        text-align: center;
+        background: $bgc_2;
+        padding: 5px !important; 
+        margin: 5px 0;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-size: $fs-sm;
+        font-style: italic;
+        img {
+            float: none;
+            display: block;
+            margin: 0 auto;
+            padding: 0 !important;
+        }
+        .wp-caption-text {
+            margin: 5px auto;
+        }
+    }
+}

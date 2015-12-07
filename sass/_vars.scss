@@ -1,0 +1,40 @@
+//////////////////////////////////
+// Typography
+//////////////////////////////////
+
+// Main background colors
+$bgc: #fbfbfb; //primary background color
+$bgc_2: #fff; //secondary background color, used in header and footer
+$bgc_3: #fff; //tertiary background color, used in sidebars
+
+// Main colors
+$color: #555; //primary font color, used for most text
+$color_2: #000; //secondary font color, used for header text
+$color_3: #f46;//link color
+
+// Main fonts, make sure to import using functions.php
+$h_font: 'Montserrat', sans-serif;
+$text_font: 'Open Sans', sans-serif;
+$blog_title_font: 'Lobster', sans-serif;
+
+//Font sizes using the 3:4 rule from David Kadavy
+$fs: 14px; //if the normal font-size is 14px...
+$fs-sm: .75 * $fs; // sm: 10.5px 
+$fs-xs: .75 * $fs-sm; // xs: 7.875px
+$fs-md: 1.3333 * $fs; // md: 18.67px
+$fs-ml: 1.3333 * $fs-md; // ml: 24.89px
+$fs-lg: 1.3333 * $fs-ml; // lg: 33.18px
+$fs-xl: 1.3333 * $fs-lg; // xl: 44.24px
+$fs-xxl: 1.3333 * $fs-xl; // xxl: 58.99px
+
+//Header
+$head_top_height: 50px; //height of the first layer
+
+$head_bot_height: 30px; //height of the second layer
+$head_bot_bgc: $color_3; //height of the second layer
+$head_bot_color: $bgc_2; //height of the second layer
+
+$head_border: none; //
+$head_shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+
+$box_shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);

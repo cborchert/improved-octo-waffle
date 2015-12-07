@@ -1,0 +1,72 @@
+header { 
+    border-bottom: $head_border;
+    box-shadow: $head_shadow;
+    font-family: $h_font;
+}
+
+//First header layer
+header .header-top{
+    background-color: $bgc_2;
+    color: $color_2;
+    @include link-color($color_2, $color_3);
+    
+    //Set up the hover/rollover effect
+    overflow: hidden;
+    position: relative;
+    .header-title {
+        height: $head_top_height;
+        position: relative;
+        .blog-title {
+            font-family: $blog_title_font;
+            font-size: $fs-lg;
+        }
+        .blog-title, .blog-description {
+            transition: 0.5s;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            line-height: $head_top_height;
+        }
+        .blog-description {
+            top: 2*$head_top_height;
+            @include link-color($color_3, $color_3, true);
+        }
+    }
+    //The header hover effect
+    .header-title:hover {
+        .blog-title {
+            top: -1*$head_top_height;
+        }
+        .blog-description {
+            top: 0;
+        }
+    } 
+    .header-menu-toggle{
+        @include link-color(lighten($color_3, 10%), $color_3);
+        &, a, i {
+            line-height: $head_top_height
+        }
+        a, i {
+            vertical-align: middle;
+            display: inline-block;
+            padding: 0 5px;
+        }
+        i.fa {
+            padding: 0 5px 2px 30px;
+        }
+    }
+}
+header .header-bottom{
+    background-color: $head_bot_bgc;
+    color: $head_bot_color;
+    min-height: $head_bot_height;
+    line-height: $head_bot_height;
+    @include link-color($bgc, $bgc, true);
+    text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.25);
+    ul li {
+        display: inline-block;
+        padding: 0 10px 0;
+        list-style: none;
+    }
+}

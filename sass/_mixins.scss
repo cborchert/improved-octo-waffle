@@ -1,0 +1,36 @@
+// Link color
+//   By default, it will darken color1
+@mixin link-color($color1, $color2: "", $underline: false) {
+	a, a:link, a:active, a:visited:hover, a:visited, a:focus, a:hover {
+        color: $color1;
+        text-decoration: none;
+    }
+    a:hover, a:visited:hover{
+        color: $color2;
+        @if $color2 == "" {
+            color: darken($color1, 20%);
+        }
+        text-decoration: none;
+        @if $underline == true {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Self Color
+//   Used when you need to define the color of an element that changes on hover (including links) 
+@mixin self-color($color1, $color2: "", $underline: false) {
+	&, &:link, &:active, &:visited, &:visited:hover, &:focus,  &:hover {
+        color: $color1;
+        text-decoration: none;
+    }
+    @if $color2 != "" {
+        &:hover, &:visited:hover, &:link:hover {
+            color: $color2;
+            text-decoration: none;
+            @if $underline == true {
+                text-decoration: underline;
+            }
+        }
+    }
+}

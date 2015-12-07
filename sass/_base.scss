@@ -1,0 +1,23 @@
+//Note that most normal/tablet desktop font-sizes are taken care of by _vars.scss and bootstrap (using those values)
+body {
+    background-color: $bgc;
+    color: $color;
+    font-family: $text_font;
+    font-size: $fs;
+    @include link-color($color_3);
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+    font-family: $h_font;
+    color: $color_2;
+}
+
+.small {
+    font-size: $fs-sm;
+}
+
+p, article {
+    line-height: 1.75em;
+    letter-spacing: 0.2px;
+}

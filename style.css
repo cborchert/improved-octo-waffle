@@ -1,0 +1,18 @@
+/*
+Theme Name: Q2Q Theme
+Theme URI: http://www.q2qcomics.com
+Author: Chris Borchert
+Author URI: http://cborchert.com
+Description: A minimal responsive theme, meant for a simple, responsive webcomic!
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Do with it as you will. Yeeeeah.
+Note that the Actual Style is in sass/style.scss
+*/
+
+.sticky {}          /* DO NOT EDIT THIS */
+.gallery-caption {} /* THESE ARE USELESS */
+.bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
