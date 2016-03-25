@@ -1,5 +1,5 @@
 <?php get_header(); //sets up a container and row ?>
-<div class='col-sm-12 col-md-8 col-md-push-2 col-lg-6 col-lg-push-3'>
+<div class='col-xs-10 col-xs-push-1 col-sm-12 col-sm-push-0 main-content' >
     <?php 
         if( have_posts() ): while( have_posts()): //start the loop
             the_post();

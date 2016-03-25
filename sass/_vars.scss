@@ -3,14 +3,14 @@
 //////////////////////////////////
 
 // Main background colors
-$bgc: #fbfbfb; //primary background color
-$bgc_2: #fff; //secondary background color, used in header and footer
-$bgc_3: #fff; //tertiary background color, used in sidebars
+$bgc: #000; //primary background color
+$bgc_2: #666; //secondary background color, used in 
+$bgc_3: #fff; //tertiary background color, used in 
 
 // Main colors
-$color: #555; //primary font color, used for most text
-$color_2: #000; //secondary font color, used for header text
-$color_3: #f46;//link color
+$color: #666; //primary font color, used for most text
+$color_2: #fff; //secondary font color, used for header text
+$color_3: #5C7448;//link color
 
 // Main fonts, make sure to import using functions.php
 $h_font: 'Montserrat', sans-serif;
@@ -27,14 +27,33 @@ $fs-lg: 1.3333 * $fs-ml; // lg: 33.18px
 $fs-xl: 1.3333 * $fs-lg; // xl: 44.24px
 $fs-xxl: 1.3333 * $fs-xl; // xxl: 58.99px
 
-//Header
-$head_top_height: 50px; //height of the first layer
+//General Elements
+$box_shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 
+//Header
+$head_top_height: 120px; //height of the first layer
+$header_top_bg: $bgc;
+$header_top_link_color: $color_2;
+$toggle_color: $color_2;
+
+$menu_bg: $bgc_2; //used for the popout menu
+$menu_bg_2: lighten($bgc_2, 20%); //used for scroll on the popout menu
+$menu_color: $color_2; //link color for the popout menu
+    
 $head_bot_height: 30px; //height of the second layer
-$head_bot_bgc: $color_3; //height of the second layer
-$head_bot_color: $bgc_2; //height of the second layer
+$head_bot_bgc: $bgc_2; //height of the second layer
+$head_bot_color: $color_2; //height of the second layer
+$head_bot_link_color: $color_2; //height of the second layer
 
 $head_border: none; //
 $head_shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
 
-$box_shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+//Posts
+$container_bg: $bgc_3; //The container around all posts
+$article_bg: $bgc_3; //Each post
+$caption_bg: darken($bgc_3, 10%); //Used around images which have a caption
+$sticky_bg: #f4f485; //Used for just sticky posts
+$h_color: darken($color, 15%);//post header color
+
+$text_color: $color;
+$link_color: $color_3;

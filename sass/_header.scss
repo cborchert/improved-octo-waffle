@@ -2,59 +2,167 @@ header {
     border-bottom: $head_border;
     box-shadow: $head_shadow;
     font-family: $h_font;
+    margin-bottom: 0;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
 }
 
 //First header layer
 header .header-top{
-    background-color: $bgc_2;
+    background-color: $header_top_bg;
     color: $color_2;
-    @include link-color($color_2, $color_3);
-    
-    //Set up the hover/rollover effect
+    @include link-color(lighten($header_top_link_color, 10%), $header_top_link_color);
     overflow: hidden;
     position: relative;
     .header-title {
-        height: $head_top_height;
+//        height: $head_top_height;
         position: relative;
+        padding: 0 0 10px;
+        box-sizing: border-box;
+        @media screen and (min-width: 928px) {
+            padding: 8px 0
+        }
         .blog-title {
             font-family: $blog_title_font;
             font-size: $fs-lg;
         }
+        img.logo, img.logo_stacked {
+            max-height: $head_top_height - 10px;
+            box-sizing: border-box;
+            max-width: 100%;
+            padding: 10px 20px;
+            @media (min-width: 650px) {
+                padding: 5px;
+            }
+        }
         .blog-title, .blog-description {
             transition: 0.5s;
             width: 100%;
-            text-align: center;
-            position: absolute;
-            top: 0;
             line-height: $head_top_height;
+            text-align: left;
         }
+        
         .blog-description {
+            display:none;
             top: 2*$head_top_height;
-            @include link-color($color_3, $color_3, true);
+            @include link-color(lighten($header_top_link_color, 10%), $header_top_link_color);
         }
     }
-    //The header hover effect
-    .header-title:hover {
-        .blog-title {
-            top: -1*$head_top_height;
+    
+    
+//    Deal with header ad
+    .header-promo-space {
+        text-align: center;
+        margin: 7.5px auto 0;
+        width: 732px;
+        max-width: 100%;
+        height: 94px;
+        box-sizing: border-box;
+        background-color: lighten($bgc, 10%);
+        padding: 2px;
+        @media screen and (min-width: 928px) {
+            position: absolute;
+            right: 15px;
+            left: auto;
+            top: 15px;
+            margin: 0;
         }
-        .blog-description {
-            top: 0;
+    }
+    .header-title, .header-title .blog-title {
+        margin: 0 auto 7.5px;
+        text-align: center;
+        img.logo_stacked {
+            display:none;
         }
-    } 
+        @media screen and (min-width: 928px) {
+            text-align: center;
+            margin: 0;
+            img.logo_stacked {
+                display: block;
+                margin: 0 auto;
+            }
+            img.logo{
+                display:none;
+            }
+        }
+        @media screen and (min-width: 1060px) {
+          padding-right: 5px;
+           img.logo {
+               display: block;
+               margin: 0 auto;
+               
+            }
+            img.logo_stacked{
+                display:none;
+            }
+        }
+        
+    }
+    .header-title {
+        padding-left: 50px;
+        @media screen and (min-width: 650px) {
+            padding-left: 0;
+        }
+    }
+    .header-title .blog-title {
+        max-width: 400px;
+        margin: 0 auto;
+        padding-bottom: 5px;
+        @media screen and (min-width: 928px) {
+            max-width: calc(100% - 732px);
+            margin: 0;
+        }
+    }
+
+//    .header-menu-toggle{
+//        display:none;
+//    }
+    
     .header-menu-toggle{
-        @include link-color(lighten($color_3, 10%), $color_3);
+        @include link-color(lighten($toggle_color, 10%), $toggle_color);
+        padding-top: $head_top_height/3;
+        width: 20%;
+        position: absolute;
+        top: 95px;
+        z-index: 90001;
+        @media (min-width: 650px) {
+             padding-top: 0;
+             top: 100px;
+        }
+        @media (min-width: 768px) {
+             display:none;
+        }
+        a {
+            font-size: 0.8*$fs;
+            @media (min-width: 650px) {
+                font-size: $fs;
+            }
+        }
         &, a, i {
-            line-height: $head_top_height
+            line-height: 1em;
+            @media (min-width: 650px) {
+                line-height: $head_top_height;
+            }
         }
         a, i {
+            text-align:center;
             vertical-align: middle;
-            display: inline-block;
-            padding: 0 5px;
+            display: block;
+            padding: 5px 10px;
+            @media (min-width: 650px) {
+                display:inline-block;
+                text-align: left;
+            }
         }
         i.fa {
-            padding: 0 5px 2px 30px;
+            padding: 5px;
+            @media (min-width: 650px) {
+                padding: 0 5px 2px 30px;
+                display:inline-block;
+            }
         }
+
     }
 }
 header .header-bottom{
@@ -62,11 +170,15 @@ header .header-bottom{
     color: $head_bot_color;
     min-height: $head_bot_height;
     line-height: $head_bot_height;
-    @include link-color($bgc, $bgc, true);
+    @include link-color($head_bot_link_color, $head_bot_link_color, true);
     text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.25);
+    display: none;
     ul li {
         display: inline-block;
         padding: 0 10px 0;
         list-style: none;
+    }
+    @media screen and (min-width: 768px) {
+        display: block;
     }
 }

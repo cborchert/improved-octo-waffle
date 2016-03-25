@@ -1,18 +1,23 @@
 /*
-Theme Name: Q2Q Theme
-Theme URI: http://www.q2qcomics.com
-Author: Chris Borchert
-Author URI: http://cborchert.com
-Description: A minimal responsive theme, meant for a simple, responsive webcomic!
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
 
-This theme, like WordPress, is licensed under the GPL.
-Do with it as you will. Yeeeeah.
-Note that the Actual Style is in sass/style.scss
+Backtrace:
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:482:in `read'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:482:in `update_stylesheet'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:293:in `watch'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/plugin.rb:108:in `method_missing'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.20/bin/sass:13:in `<top (required)>'
+C:/Ruby21/bin/sass:23:in `load'
+C:/Ruby21/bin/sass:23:in `<main>'
 */
-
-.sticky {}          /* DO NOT EDIT THIS */
-.gallery-caption {} /* THESE ARE USELESS */
-.bypostauthor {}    /* THEY ARE ONLY TO KEEP THEME CHECK HAPPY */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }

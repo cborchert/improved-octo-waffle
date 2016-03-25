@@ -4,9 +4,9 @@
 
 @import 'mixins';
 
-@import 'base';
-@import 'tablet_768'; //Since they use max-width as the restriction, load them in descending order
-@import 'mobile_450';
+@import 'base_449'; //Responsive, mobile first, handles up to screens of 449 px
+@import 'tablet_767'; // 450px to 767px
+@import 'desktop'; // 767px and up
 
 @import 'header';
 @import 'primary_nav';

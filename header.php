@@ -73,22 +73,32 @@
                 <!-- first header layer: menu toggle, site title, search -->
                 <div class='header-top'>
                     <!-- This is reserved for the menu toggle-->
-                    <div class='header-menu-toggle col-sm-3'>
+                    <div class='header-menu-toggle'>
                        <?php if($primary_menu): ?>
                         <a href="#" class="menu-toggle" onclick="openMainMenu(event);"><i class="fa fa-2x fa-bars"></i> Menu</a>
                        <?php endif; ?>
                     </div>
 
+                    <div class='header-promo-space'>
+                        Leaderboard Ad
+                    </div>
                     <!-- This is reserved for the site title, logo, description-->
-                    <div class='header-title col-sm-6 text-center'>
+                    <div class='header-title'>
                         <?php 
                             $blog_title =  get_bloginfo('name');
                             $blog_desc =  get_bloginfo('description');
                             $blog_url =  get_bloginfo('url');
                         ?>
-                        <div class='blog-title'><a href="<?php echo $blog_url; ?>" alt="Home"><?php echo $blog_title ?></a></div>
+                        <div class='blog-title'>
+                            <a href="<?php echo $blog_url; ?>" alt="Home">
+<!--                                <?php// echo (file_exists ( "img/logo.png" ))?"<img src='img/logo.png' alt='".$blog_url."'>": $blog_title; ?>-->
+                                <img src='<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png' alt='<?php echo $blog_url; ?>' class='logo'>
+                                <img src='<?php echo get_stylesheet_directory_uri(); ?>/img/logo_stacked.png' alt='<?php echo $blog_url; ?>' class='logo_stacked'>
+                            </a>
+                        </div>
                         <div class='blog-description'><a href="<?php echo $blog_url; ?>" alt="Home"><?php echo $blog_desc ?></a></div>
                     </div>
+        
 
                     <!-- This is reserved for the header search-->
                     <div class='header-search'>
@@ -103,8 +113,10 @@
                                  'container' => false,                           // remove nav container
                                  'container_class' => 'menu',                 // class of container (should you choose to use it)
                                  'menu' => __( 'Secondary Menu', 'sibeautheme' ),  // nav name
+//                                 'menu_class' => 'nav secondary-nav',               // adding custom nav class
+//                                 'theme_location' => 'secondary-menu',                 // where it's located in the theme
                                  'menu_class' => 'nav secondary-nav',               // adding custom nav class
-                                 'theme_location' => 'secondary-menu',                 // where it's located in the theme
+                                 'theme_location' => 'primary-menu',                 // where it's located in the theme
                                  'before' => '',                                 // before the menu
                                    'after' => '',                                  // after the menu
                                    'link_before' => '',                            // before each link

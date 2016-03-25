@@ -1,5 +1,5 @@
 #main-menu{
-    background: $bgc_2;
+    background: $menu_bg;
     box-shadow: $box_shadow;
     padding: 10px 5px 20px 20px;
     
@@ -21,10 +21,10 @@
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: $color_3;
+      background-color: $menu_bg_2;
       outline: none;
     }
-    
+    @include link-color($menu_color);
     transition: left 1s;
 }
 
@@ -42,10 +42,10 @@ ul.primary-nav{
         list-style: none;
         margin: 2px 0 10px 10px;
         padding: 0 0 0 10px;
-        border-left: 5px lighten($color_3, 20%) solid;
+        border-left: 5px lighten($menu_bg, 20%) solid;
     }
 }
 .close-primary-nav {
     padding-right: 20px;
-    @include link-color(lighten($color_3, 20%), $color_3);
+    @include link-color($menu_color);
 }

@@ -1,4 +1,9 @@
+.main-content {
+    background: $container_bg;
+}
+
 article {
+    background: $article_bg;
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -7,11 +12,12 @@ article {
     h1, h2, h3, h4, h5, h6,
     .h1, .h2, .h3, .h4, .h5, .h6 {
         text-align: left;
+        
     }
     
     //Make sticky posts stand out
     &.sticky {
-        background: $bgc_2;
+        background: $sticky_bg;
         box-shadow: $box_shadow;
         padding: 10px 20px;
     }
@@ -40,7 +46,7 @@ article {
     .wp-caption {
         max-width: 100%;
         text-align: center;
-        background: $bgc_2;
+        background: $caption_bg;
         padding: 5px !important; 
         margin: 5px 0;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
