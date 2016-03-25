@@ -14,4 +14,14 @@
         endwhile; endif; //end the loop
     ?>
 </div>
+    
+<?php if ( is_active_sidebar( 'sidebar-main' ) ) : ?>
+<div class="col-xs-10 sidebar-main-container">
+    <ul id="sidebar-main">
+        <?php dynamic_sidebar( 'sidebar-main' ); ?>
+    </ul>
+</div>
+<?php endif; ?>
+
+
 <?php get_footer(); //closes a container and a row //make sure no white space after tag ?>

@@ -51,7 +51,7 @@
                     $primary_menu = wp_nav_menu(array(
                          'container' => false,                           // remove nav container
                          'container_class' => 'menu',                 // class of container (should you choose to use it)
-                         'menu' => __( 'Primary Menu', 'sibeautheme' ),  // nav name
+                         'menu' => __( 'Primary Menu', 'q2qtheme' ),  // nav name
                          'menu_class' => 'nav primary-nav',               // adding custom nav class
                          'theme_location' => 'primary-menu',                 // where it's located in the theme
                          'before' => '',                                 // before the menu
@@ -112,7 +112,7 @@
                             wp_nav_menu(array(
                                  'container' => false,                           // remove nav container
                                  'container_class' => 'menu',                 // class of container (should you choose to use it)
-                                 'menu' => __( 'Secondary Menu', 'sibeautheme' ),  // nav name
+                                 'menu' => __( 'Secondary Menu', 'q2qtheme' ),  // nav name
 //                                 'menu_class' => 'nav secondary-nav',               // adding custom nav class
 //                                 'theme_location' => 'secondary-menu',                 // where it's located in the theme
                                  'menu_class' => 'nav secondary-nav',               // adding custom nav class
