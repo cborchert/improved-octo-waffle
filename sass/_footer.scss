@@ -1,0 +1,26 @@
+footer {
+    background-color: $head_bot_bgc;
+    color: $head_bot_color;
+    @include link-color($head_bot_link_color, $head_bot_link_color, true);
+    text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.25);
+    padding: 20px;
+    margin-top: 50px;
+    
+    ul li, div.copyright span {
+        display: inline-block;
+        padding: 0 10px 0;
+        list-style: none;
+    }
+    
+    ul {
+        margin-bottom: 0;
+    }
+    
+    
+    div.copyright{
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: right;
+        }
+    }
+}

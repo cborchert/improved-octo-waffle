@@ -1,0 +1,39 @@
+ul.sidebar {
+    background-color: $head_bot_bgc;
+    color: $head_bot_color;
+    @include link-color($head_bot_link_color, $head_bot_link_color, true);
+    text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.25);
+    padding: 20px;
+    
+    text-align: center;
+        
+    li {
+        list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5 {
+        color: $head_bot_color;
+        margin-top: 3px;
+    }
+    
+    label {
+        display: block;
+    }
+}
+
+ul#sidebar-foot {
+    padding: 0;
+    text-align: left;
+}
+
+div.sidebar-main-container {
+    
+    margin: 5px 0 30px;
+    background-color: $head_bot_bgc;
+    
+    @media screen and (min-width: 992px) {
+        margin: 0 0 20px;
+        background-color: transparent;
+    }
+    
+}
