@@ -5,7 +5,7 @@
                 <div class="row">
                     <?php if ( is_active_sidebar( 'sidebar-foot' ) ) : ?>
                         <div class="col-xs-12 col-sm-9 sidebar-foot-container">
-                            <ul id="sidebar-foot">
+                            <ul id="sidebar-foot" class="sidebar">
                                 <?php dynamic_sidebar( 'sidebar-foot' ); ?>
                             </ul>
                         </div>

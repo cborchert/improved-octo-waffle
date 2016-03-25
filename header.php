@@ -127,5 +127,5 @@
                     </nav>
                 </div>
             </header>
-            <div class="container">
+            <div class="container-fluid the-main-content">
                 <div class="row">
