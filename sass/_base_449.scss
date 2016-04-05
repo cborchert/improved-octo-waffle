@@ -18,9 +18,11 @@ h1, h2, h3, h4, h5,
 .small {
     font-size: $fs-sm;
 }
+
 .container-fluid.the-main-content {
     margin: 15px;
 }
+
 p, article {
     line-height: 1.75em;
     letter-spacing: 0.2px;
@@ -30,16 +32,27 @@ p, article {
 h1, .h1 {
     font-size: $fs-lg;
 }
-h2, .h2 {
+
+h2, .h2, .entry-meta {
     font-size: $fs-ml;
+    line-height: $fs-ml;
 }
+
 h3, .h3 {
     font-size: $fs-md;
 }
+
 h4, .h4 {
     font-size: $fs;
 }
+
 h5, .h5 {
     font-size: $fs;
 }
 
+//images
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}

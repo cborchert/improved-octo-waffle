@@ -4,8 +4,9 @@
     h1, .h1 {
         font-size: $fs-xl;
     }
-    h2, .h2 {
+    h2, .h2, .entry-meta {
         font-size: $fs-lg;
+        line-height: $fs-lg;   
     }
     h3, .h3 {
         font-size: $fs-ml;

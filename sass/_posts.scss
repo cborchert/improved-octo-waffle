@@ -1,6 +1,31 @@
 .main-content {
     background: $container_bg;
+    padding-bottom: 25px;
 }
+
+.entry-meta {
+    float: left;
+    display: block;
+    text-align: left;
+    width: 100%;
+    font-size: $fs;
+    margin-top: 0
+}
+
+h2.entry-title  {
+    float: left;
+    width: 100%;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+.entry-date,
+.entry-edit {
+    font-size: $fs;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
 
 article {
     background: $article_bg;

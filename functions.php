@@ -67,6 +67,24 @@ function q2q_widgets_init() {
 }
 add_action( 'widgets_init', 'q2q_widgets_init' );
 
+//Add comic support 
+function q2q_comics() {
+    add_theme_support( 'jetpack-comic' );
+}
+add_action( 'after_setup_theme', 'q2q_comics' );
+
+//Deal with image sizes... yay 4.4 responsive!! :-/
+function q2q_content_image_sizes_attr($sizes, $size) {
+    $width = $size[0];
+    //if you wanted to distinguish by page template...
+    // if (get_page_template_slug() === 'template-full_width.php') { ... }
+    //We're not gonna.
+    
+    //All pages
+    return ' (max-width: 767px) 767px, (max-width: 1024px) 1024px, (max-width: 1200px) 100vw, 1200px';
+}
+add_filter('wp_calculate_image_sizes', 'q2q_content_image_sizes_attr', 10 , 2);
+
 
 //Keep the closing tag, no white space afterwards!
 ?>
