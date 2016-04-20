@@ -4239,6 +4239,8 @@ article {
     .comic-container .the-content::-webkit-scrollbar-thumb {
       border-radius: 10px;
       background: rgba(0, 0, 0, 0.3); }
+    .comic-container .the-content div {
+      overflow: hidden; }
 
 @media screen and (min-width: 450px) {
   h1, .h1 {
