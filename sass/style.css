@@ -4114,6 +4114,25 @@ div.sidebar-main-container {
       margin: 0 0 20px;
       background-color: transparent; } }
 
+#searchform {
+  max-width: 250px; }
+  #searchform input {
+    display: block;
+    padding: 5px 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: white;
+    border: none;
+    color: #666;
+    box-sizing: border-box; }
+    #searchform input[type="text"] {
+      width: 100%; }
+    #searchform input[type="submit"] {
+      background: #999;
+      padding: 5px;
+      color: white;
+      width: 70px; }
+
 .main-content {
   background: #fff;
   padding-bottom: 25px; }
@@ -4255,20 +4274,14 @@ article {
     max-width: 1200px; }
 
   .entry-meta {
-    text-align: right;
-    width: 25%;
     font-size: 14px; }
 
   h2.entry-title {
-    width: 75%;
-    padding-right: 30px;
     box-sizing: border-box; }
 
   .entry-date,
   .entry-edit {
-    font-size: 14px;
-    margin-left: 15px;
-    margin-right: 0; }
+    font-size: 14px; }
 
   .comic-container .the-content img {
     max-width: 100% !important; }

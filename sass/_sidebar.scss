@@ -37,3 +37,37 @@ div.sidebar-main-container {
     }
     
 }
+
+#searchform {
+    
+    max-width: 250px;
+    
+    input{
+        
+        display: block;
+        padding: 5px 15px;
+        margin: 10px auto;
+        border-radius: 10px;
+        background: white;
+        border: none;
+        color: $color;
+        box-sizing: border-box;
+        
+        &[type="text"] {
+            width: 100%;
+        }
+        
+        &[type="submit"] {
+            
+            background: #999;
+            padding: 5px;
+            color: white;
+            width: 70px;
+            
+        }
+        
+        
+        
+    }
+    
+}
