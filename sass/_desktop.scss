@@ -1,41 +1,75 @@
 @media screen and (min-width: 768px) {
 
+    .desktop-only {
+
+        display: block;
+
+    }
+    
+    .tablet-down {
+
+        display: none;
+
+    }
+    
     .container-fluid.the-main-content {
+    
         margin: 30px auto;
         max-width: 1200px;
+    
     }
     
     .header-top,
     .header-bottom nav,
     footer > div.row {
+    
         margin: 0 auto;
         max-width: 1200px;
+    
     }
     
     .entry-meta {
+    
         text-align: right;
         width: 25%;
         font-size: $fs;
+    
     }
 
     h2.entry-title  {
+    
         width: 75%;
         padding-right: 30px;
         box-sizing: border-box;
+    
     }
     
     .entry-date,
     .entry-edit {
+    
         font-size: $fs;
         margin-left: 15px;
         margin-right: 0;
+    
     }
     
     .comic-container {
+        
         .the-content {
+            
             img {
+                    
                 max-width: 100% !important;
             }
+            
         }
+        
+        .the-comic-nav a {
+        
+            width: auto;
+        
+        }
+    
     }
+
 }

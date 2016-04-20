@@ -22,7 +22,7 @@
             color: #000 !important;
             transition: 600ms;
             font-weight: bold;
-            
+            width: calc(50% - 40px);
             &:hover {
                 background: #cad9b9;
             }

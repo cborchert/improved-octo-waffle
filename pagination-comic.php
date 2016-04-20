@@ -34,7 +34,27 @@
         $lastComicLink = get_post_permalink();
     endwhile; endif;
 
-    echo '<div class="the-comic-nav">';
+    echo '<div class="the-comic-nav tablet-down">';
+
+        echo '<div>';
+            echo $prevComicLink;
+            echo $nextComicLink;
+        echo '</div>';
+        
+        echo '<div>';
+
+            if( $firstComicLink != $currentComicLink && $firstComicLink != '' ) {
+                echo '<a href="'.$firstComicLink.'"> &laquo; First </a>';
+            }
+
+            if( !($frontPage) && $lastComicLink != $currentComicLink ){
+                echo '<a href="'.$lastComicLink.'"> Latest &raquo; </a>';
+            }
+        
+        echo '</div>';
+
+    echo '</div>';
+    echo '<div class="the-comic-nav desktop-only">';
        
         if( $firstComicLink != $currentComicLink && $firstComicLink != '' ) {
             echo '<a href="'.$firstComicLink.'"> &laquo; First </a>';

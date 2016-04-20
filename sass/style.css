@@ -3806,6 +3806,9 @@ h1, h2, h3, h4, h5,
 .container-fluid.the-main-content {
   margin: 15px; }
 
+.desktop-only {
+  display: none; }
+
 p, article {
   line-height: 1.75em;
   letter-spacing: 0.2px; }
@@ -3831,51 +3834,6 @@ img {
   height: auto;
   max-width: 100%; }
 
-@media screen and (min-width: 450px) {
-  h1, .h1 {
-    font-size: 44.24249px; }
-
-  h2, .h2, .entry-meta {
-    font-size: 33.1827px;
-    line-height: 33.1827px; }
-
-  h3, .h3 {
-    font-size: 24.88764px; }
-
-  h4, .h4 {
-    font-size: 18.6662px; }
-
-  h5, .h5 {
-    font-size: 14px; } }
-@media screen and (min-width: 768px) {
-  .container-fluid.the-main-content {
-    margin: 30px auto;
-    max-width: 1200px; }
-
-  .header-top,
-  .header-bottom nav,
-  footer > div.row {
-    margin: 0 auto;
-    max-width: 1200px; }
-
-  .entry-meta {
-    text-align: right;
-    width: 25%;
-    font-size: 14px; }
-
-  h2.entry-title {
-    width: 75%;
-    padding-right: 30px;
-    box-sizing: border-box; }
-
-  .entry-date,
-  .entry-edit {
-    font-size: 14px;
-    margin-left: 15px;
-    margin-right: 0; }
-
-  .comic-container .the-content img {
-    max-width: 100% !important; } }
 header {
   border-bottom: none;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
@@ -4244,7 +4202,8 @@ article {
       border-radius: 10px;
       color: #000 !important;
       transition: 600ms;
-      font-weight: bold; }
+      font-weight: bold;
+      width: calc(50% - 40px); }
       .comic-container .the-comic-nav a:hover {
         background: #cad9b9; }
   .comic-container .the-content {
@@ -4261,5 +4220,59 @@ article {
     .comic-container .the-content::-webkit-scrollbar-thumb {
       border-radius: 10px;
       background: rgba(0, 0, 0, 0.3); }
+
+@media screen and (min-width: 450px) {
+  h1, .h1 {
+    font-size: 44.24249px; }
+
+  h2, .h2, .entry-meta {
+    font-size: 33.1827px;
+    line-height: 33.1827px; }
+
+  h3, .h3 {
+    font-size: 24.88764px; }
+
+  h4, .h4 {
+    font-size: 18.6662px; }
+
+  h5, .h5 {
+    font-size: 14px; } }
+@media screen and (min-width: 768px) {
+  .desktop-only {
+    display: block; }
+
+  .tablet-down {
+    display: none; }
+
+  .container-fluid.the-main-content {
+    margin: 30px auto;
+    max-width: 1200px; }
+
+  .header-top,
+  .header-bottom nav,
+  footer > div.row {
+    margin: 0 auto;
+    max-width: 1200px; }
+
+  .entry-meta {
+    text-align: right;
+    width: 25%;
+    font-size: 14px; }
+
+  h2.entry-title {
+    width: 75%;
+    padding-right: 30px;
+    box-sizing: border-box; }
+
+  .entry-date,
+  .entry-edit {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 0; }
+
+  .comic-container .the-content img {
+    max-width: 100% !important; }
+  .comic-container .the-comic-nav a {
+    width: auto; } }
 
 /*# sourceMappingURL=style.css.map */
