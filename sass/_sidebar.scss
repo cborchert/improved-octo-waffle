@@ -9,6 +9,17 @@ ul.sidebar {
         
     li {
         list-style: none;
+        padding: 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    li.widget_search {
+        
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        
     }
     
     h1, h2, h3, h4, h5 {
@@ -19,6 +30,30 @@ ul.sidebar {
     label {
         display: block;
     }
+    
+    div.q2q-adspace-sidebar {
+        
+        background: #000;
+        width: 200px;
+        height: 170px;
+        padding: 10px;
+        margin: 0 auto;
+        color: white;
+        box-sizing: border-box;
+        position: relative;
+        
+        &:after {
+         
+            content: "Rectangle 180x150";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
+    
+    }
+
 }
 
 ul#sidebar-foot {
@@ -41,6 +76,7 @@ div.sidebar-main-container {
 #searchform {
     
     max-width: 250px;
+    margin: 0 auto;
     
     input{
         

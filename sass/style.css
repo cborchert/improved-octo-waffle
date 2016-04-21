@@ -4095,12 +4095,34 @@ ul.sidebar {
     text-decoration: none;
     text-decoration: underline; }
   ul.sidebar li {
-    list-style: none; }
+    list-style: none;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle; }
+  ul.sidebar li.widget_search {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
   ul.sidebar h1, ul.sidebar h2, ul.sidebar h3, ul.sidebar h4, ul.sidebar h5 {
     color: #fff;
     margin-top: 3px; }
   ul.sidebar label {
     display: block; }
+  ul.sidebar div.q2q-adspace-sidebar {
+    background: #000;
+    width: 200px;
+    height: 170px;
+    padding: 10px;
+    margin: 0 auto;
+    color: white;
+    box-sizing: border-box;
+    position: relative; }
+    ul.sidebar div.q2q-adspace-sidebar:after {
+      content: "Rectangle 180x150";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0; }
 
 ul#sidebar-foot {
   padding: 0;
@@ -4115,7 +4137,8 @@ div.sidebar-main-container {
       background-color: transparent; } }
 
 #searchform {
-  max-width: 250px; }
+  max-width: 250px;
+  margin: 0 auto; }
   #searchform input {
     display: block;
     padding: 5px 15px;
@@ -4289,5 +4312,8 @@ article {
     max-width: 100% !important; }
   .comic-container .the-comic-nav a {
     width: auto; } }
+@media (min-width: 992px) {
+  ul.sidebar li {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
