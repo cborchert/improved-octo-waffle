@@ -80,7 +80,7 @@
                     </div>
 
                     <div class='header-promo-space'>
-                        Leaderboard Ad
+                        <img src="http://lorempixel.com/728/90/city" />
                     </div>
                     <!-- This is reserved for the site title, logo, description-->
                     <div class='header-title'>

@@ -3894,7 +3894,15 @@ header .header-top {
     height: 94px;
     box-sizing: border-box;
     background-color: #1a1a1a;
-    padding: 2px; }
+    padding: 2px;
+    position: relative; }
+    header .header-top .header-promo-space:after {
+      content: "Leaderboard 728x90";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff; }
     @media screen and (min-width: 928px) {
       header .header-top .header-promo-space {
         position: absolute;

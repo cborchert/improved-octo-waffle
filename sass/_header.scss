@@ -53,6 +53,7 @@ header .header-top{
     
 //    Deal with header ad
     .header-promo-space {
+        
         text-align: center;
         margin: 7.5px auto 0;
         width: 732px;
@@ -61,13 +62,29 @@ header .header-top{
         box-sizing: border-box;
         background-color: lighten($bgc, 10%);
         padding: 2px;
+        position: relative;
+        
+        &:after {
+        
+            content: "Leaderboard 728x90";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+        
+        }
+        
         @media screen and (min-width: 928px) {
+        
             position: absolute;
             right: 15px;
             left: auto;
             top: 15px;
             margin: 0;
+        
         }
+    
     }
     .header-title, .header-title .blog-title {
         margin: 0 auto 7.5px;

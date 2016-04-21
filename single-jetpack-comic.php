@@ -2,7 +2,7 @@
 
 <?php get_template_part('loop', 'comic'); ?>
 
-<?php get_template_part('sidebar', 'right'); ?>
+<?php get_template_part('sidebar', 'up'); ?>
 
 <?php get_template_part('loop', 'content'); ?>
 
