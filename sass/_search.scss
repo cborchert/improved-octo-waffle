@@ -1,0 +1,44 @@
+.search-header {
+    
+    text-align: center;
+    
+}
+
+.search-page-search-form {
+    
+    text-align: center;
+    
+    form#searchform, form {
+        
+        width: 100%;
+        max-width: 500px;
+        margin: 100px auto 100px;
+        
+        label {
+            
+            font-size: 2em;
+        
+        }
+        
+        input[type="text"] {
+        
+            background: #f0f0f0;
+            box-shadow: 3px 5px 2px #ccc;
+            margin: 20px auto 40px;
+            
+        }
+        
+        input[type="submit"] {
+         
+            background: $color_3;
+            padding: 10px 20px;
+            font-size: 1.25em;
+            width: 100%;
+            max-width: 200px;
+            box-shadow: 3px 3px 2px #eee;
+            
+        }
+        
+    }
+    
+}

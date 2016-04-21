@@ -4265,6 +4265,29 @@ article {
     .comic-container .the-content div {
       overflow: hidden; }
 
+.search-header {
+  text-align: center; }
+
+.search-page-search-form {
+  text-align: center; }
+  .search-page-search-form form#searchform, .search-page-search-form form {
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto 100px; }
+    .search-page-search-form form#searchform label, .search-page-search-form form label {
+      font-size: 2em; }
+    .search-page-search-form form#searchform input[type="text"], .search-page-search-form form input[type="text"] {
+      background: #f0f0f0;
+      box-shadow: 3px 5px 2px #ccc;
+      margin: 20px auto 40px; }
+    .search-page-search-form form#searchform input[type="submit"], .search-page-search-form form input[type="submit"] {
+      background: #5C7448;
+      padding: 10px 20px;
+      font-size: 1.25em;
+      width: 100%;
+      max-width: 200px;
+      box-shadow: 3px 3px 2px #eee; }
+
 @media screen and (min-width: 450px) {
   h1, .h1 {
     font-size: 44.24249px; }
