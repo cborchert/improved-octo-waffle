@@ -83,8 +83,25 @@ function q2q_content_image_sizes_attr($sizes, $size) {
     //All pages
     return ' (max-width: 767px) 767px, (max-width: 1024px) 1024px, (max-width: 1200px) 100vw, 1200px';
 }
-add_filter('wp_calculate_image_sizes', 'q2q_content_image_sizes_attr', 10 , 2);
+add_filter('wp_calculate_image_sizes', 'q2q_content_image_sizes_attr', 9 , 2);
 
+//get rid of additional shit after .png,.jpg,.gif.. this needs to be tested!
+function q2q_content_responsive( $content ) {
+    
+    $new_content = preg_replace("/((\.png|\.gif|\.jpg))(\?)*([0-9a-zA-Z]*=[0-9a-zA-Z]*&*)*/", "$1", $content);
+   
+    if( function_exists( 'wp_make_content_images_responsive' ) ) {
+        
+        return wp_make_content_images_responsive( $new_content ); // This doesn't seem to work? 
+        
+    } else {
+        
+        return $new_content;
+        
+    }
+        
+}
+add_filter('the_content', 'q2q_content_responsive', 10);
 
 //Keep the closing tag, no white space afterwards!
 ?>
