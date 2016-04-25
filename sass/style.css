@@ -4275,13 +4275,16 @@ article {
 
 .search-header {
   text-align: center; }
+  .search-header img {
+    margin-top: 70px;
+    max-height: 350px; }
 
 .search-page-search-form {
   text-align: center; }
   .search-page-search-form form#searchform, .search-page-search-form form {
     width: 100%;
     max-width: 500px;
-    margin: 100px auto 100px; }
+    margin: 70px auto 100px; }
     .search-page-search-form form#searchform label, .search-page-search-form form label {
       font-size: 2em; }
     .search-page-search-form form#searchform input[type="text"], .search-page-search-form form input[type="text"] {

@@ -22,6 +22,7 @@
         <div class="search-header">
             <h1> Nothing found for:</h1>
             <h2> &ldquo; <?php echo get_search_query(); ?> &rdquo; </h2>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ropacusia_search.png" alt="Nothing found :("/>
         </div>
         <div class="search-page-search-form">
             <?php
