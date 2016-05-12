@@ -42,6 +42,9 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+        <div id="ajaxLoader">
+            Loading...
+        </div>
         <div class='nav main-nav' id="main-menu">
             <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
                 <div class="close-primary-nav text-right"> 

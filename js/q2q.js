@@ -28,3 +28,29 @@ jQuery('#the_page').on('click', function(){
        closeMainMenu();
    }    
 });
+
+jQuery('#main-content-container').on( 'click', '.js-ajax-load-more', function(e){
+   
+    e.preventDefault();
+    
+    var prevLink = jQuery(this).closest('.ajax-nav').find('.nav-previous a')[0]
+    var prevUrl = jQuery(prevLink).attr('href');
+    
+    
+    if( prevUrl ) {
+        
+        jQuery('body').addClass('loadingAjax');
+        
+        jQuery.get(prevUrl, function(results){ 
+            
+            jQuery(results).find("#main-content-container article").appendTo("#main-content-container");
+            jQuery('#main-content-container').find('.ajax-nav').remove();
+            jQuery(results).find("#main-content-container .ajax-nav").appendTo("#main-content-container");
+            
+            jQuery('body').removeClass('loadingAjax');
+            
+        
+        });
+    }
+    
+});
