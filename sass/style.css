@@ -4228,7 +4228,9 @@ article {
   background: #fff;
   padding: 10px 0;
   margin-bottom: 30px;
-  text-align: justify; }
+  text-align: justify;
+  max-height: 50000px;
+  overflow-y: scroll; }
   article h1, article h2, article h3, article h4, article h5, article h6,
   article .h1, article .h2, article .h3, article .h4, article .h5, article .h6 {
     text-align: left; }
@@ -4266,6 +4268,46 @@ article {
       padding: 0 !important; }
     article .wp-caption .wp-caption-text {
       margin: 5px auto; }
+
+.article-open-button {
+  display: none; }
+
+.article-white-shadow {
+  display: none; }
+
+.article-closed {
+  position: relative; }
+  .article-closed article {
+    max-height: 300px;
+    overflow-y: hidden; }
+  .article-closed .article-white-shadow {
+    height: 75px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, white 50%, white 100%);
+    background: -o-linear-gradient(rgba(255, 255, 255, 0) 0%, white 50%, white 100%);
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, white 50%, white 100%);
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    /* IE6-9 */ }
+  .article-closed .article-open-button {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    background: #aaa;
+    padding: 5px 15px;
+    margin: 0;
+    border-radius: 10px;
+    color: #000 !important;
+    transition: 600ms;
+    font-weight: bold; }
+    .article-closed .article-open-button:hover {
+      background: #cad9b9; }
 
 .comic-container {
   background: #fff;

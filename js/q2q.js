@@ -43,7 +43,7 @@ jQuery('#main-content-container').on( 'click', '.js-ajax-load-more', function(e)
         
         jQuery.get(prevUrl, function(results){ 
             
-            jQuery(results).find("#main-content-container article").appendTo("#main-content-container");
+            jQuery(results).find("#main-content-container .article-container").appendTo("#main-content-container");
             jQuery('#main-content-container').find('.ajax-nav').remove();
             jQuery(results).find("#main-content-container .ajax-nav").appendTo("#main-content-container");
             
@@ -53,4 +53,11 @@ jQuery('#main-content-container').on( 'click', '.js-ajax-load-more', function(e)
         });
     }
     
+});
+
+jQuery('body').on('click', '.js-open-article', function(e) {
+  
+  e.preventDefault();
+  jQuery(this).closest('.article-closed').removeClass('article-closed');
+  
 });
