@@ -1,6 +1,6 @@
 <?php get_header(); //sets up a container and row ?>
 
-<div class='col-xs-12 col-xs-push-0 <?php echo (is_active_sidebar( 'sidebar-main' ))?'col-md-9 ':'col-md-12'; ?> col-md-push-0 main-content' >
+<div class='col-xs-12 col-xs-push-0 <?php echo (is_active_sidebar( 'sidebar-main' ))?'col-md-8 ':'col-md-12'; ?> col-md-push-0 main-content' >
     <?php
         if( have_posts() ): 
             while( have_posts()): //start the loop

@@ -11,12 +11,13 @@ ul.sidebar {
         list-style: none;
         padding: 10px;
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: top;
+        min-width: 200px;
+        box-sizing: border-box;
     }
     
     li.widget_search {
         
-        display: block;
         margin: 0 auto;
         text-align: center;
         
@@ -34,9 +35,9 @@ ul.sidebar {
     div.q2q-adspace-sidebar {
         
         background: #000;
-        width: 200px;
-        height: 170px;
-        padding: 10px;
+        width: 180px;
+        height: 150px;
+        padding: 0;
         margin: 0 auto;
         color: white;
         box-sizing: border-box;
@@ -47,6 +48,7 @@ ul.sidebar {
             content: "Rectangle 180x150";
             display: block;
             position: absolute;
+            padding: 10px;
             top: 0;
             left: 0;
             

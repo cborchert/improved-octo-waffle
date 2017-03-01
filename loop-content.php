@@ -1,4 +1,4 @@
-<div class='col-xs-12 col-xs-push-0 <?php echo (is_active_sidebar( 'sidebar-main' ))?'col-md-9 col-md-pull-3':'col-md-12'; ?> col-md-push-0 main-content' >
+<div class='col-xs-12 col-xs-push-0 <?php echo (is_active_sidebar( 'sidebar-main' ))?'col-md-8 col-md-pull-4':'col-md-12'; ?> col-md-push-0 main-content' >
     
     <div id="main-content-container">
         

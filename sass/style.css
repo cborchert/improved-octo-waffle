@@ -4142,9 +4142,10 @@ ul.sidebar {
     list-style: none;
     padding: 10px;
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: top;
+    min-width: 200px;
+    box-sizing: border-box; }
   ul.sidebar li.widget_search {
-    display: block;
     margin: 0 auto;
     text-align: center; }
   ul.sidebar h1, ul.sidebar h2, ul.sidebar h3, ul.sidebar h4, ul.sidebar h5 {
@@ -4154,9 +4155,9 @@ ul.sidebar {
     display: block; }
   ul.sidebar div.q2q-adspace-sidebar {
     background: #000;
-    width: 200px;
-    height: 170px;
-    padding: 10px;
+    width: 180px;
+    height: 150px;
+    padding: 0;
     margin: 0 auto;
     color: white;
     box-sizing: border-box;
@@ -4165,6 +4166,7 @@ ul.sidebar {
       content: "Rectangle 180x150";
       display: block;
       position: absolute;
+      padding: 10px;
       top: 0;
       left: 0; }
 
@@ -4311,11 +4313,24 @@ article {
 
 .comic-container {
   background: #fff;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative; }
+  .comic-container .support-badge {
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    z-index: 1000;
+    cursor: pointer; }
+    @media screen and (min-width: 1250px) {
+      .comic-container .support-badge {
+        top: -35px;
+        right: -25px; } }
   .comic-container article {
     margin-bottom: 0; }
   .comic-container .the-comic {
     padding-bottom: 25px; }
+    .comic-container .the-comic h2.entry-title {
+      width: calc( 100% - 110px ); }
   .comic-container .the-comic-nav {
     text-align: center;
     margin: 5px auto 20px;

@@ -2,6 +2,26 @@
     
     background: $container_bg;
     margin-bottom: 20px;
+  
+    
+    position: relative;
+        
+    .support-badge {
+
+        position: absolute;
+        top: -15px;
+        right: 5px;
+        z-index: 1000;
+        cursor: pointer;
+      
+        @media screen and (min-width: 1250px) {
+          
+            top: -35px;
+            right: -25px;
+          
+        }
+
+    }
     
     article {
     
@@ -12,6 +32,12 @@
     .the-comic {
     
         padding-bottom: 25px;
+      
+        h2.entry-title {
+          
+            width: calc( 100% - 110px );
+          
+        }
     
     }
     
