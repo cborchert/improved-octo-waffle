@@ -3,13 +3,16 @@
     box-shadow: $box_shadow;
     padding: 10px 5px 20px 20px;
     
-    width: 350px;
+//    width: 350px;
+    width: 100vw;
+    height: 100vh;
     max-width: 100%;
     max-height: 100%;
     
     position: fixed;
+//    top: 10px;
     top: 0;
-    left: -400px;
+    left: -200vw;
     z-index: 100000; //higher than the admin bar z-index :)
     
     overflow:auto;

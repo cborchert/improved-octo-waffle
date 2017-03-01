@@ -69,6 +69,7 @@ header .header-top{
             content: "Leaderboard 728x90";
             display: block;
             position: absolute;
+            padding: 10px;
             top: 0;
             left: 0;
             color: #fff;
@@ -87,7 +88,8 @@ header .header-top{
     
     }
     .header-title, .header-title .blog-title {
-        margin: 0 auto 7.5px;
+//        margin: 0 auto 7.5px;
+        margin: 0 auto;
         text-align: center;
         img.logo_stacked {
             display:none;
@@ -117,7 +119,7 @@ header .header-top{
         
     }
     .header-title {
-        padding-left: 50px;
+        padding-left: 80px;
         @media screen and (min-width: 650px) {
             padding-left: 0;
         }
@@ -125,7 +127,7 @@ header .header-top{
     .header-title .blog-title {
         max-width: 400px;
         margin: 0 auto;
-        padding-bottom: 5px;
+//        padding-bottom: 5px;
         @media screen and (min-width: 928px) {
             max-width: calc(100% - 732px);
             margin: 0;
@@ -194,6 +196,7 @@ header .header-bottom{
         display: inline-block;
         padding: 0 10px 0;
         list-style: none;
+        letter-spacing: 1px;
     }
     @media screen and (min-width: 768px) {
         display: block;
